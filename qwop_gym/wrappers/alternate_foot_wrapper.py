@@ -30,7 +30,7 @@ class AlternateFootWrapper(gym.Wrapper):
         right_calf_y = raw_data[(8 * 5) + 1]
         right_thigh_y = raw_data[(11 * 5) + 1]
 
-        # Strafe für Knie-Rutschen (Dein ursprünglicher Code)
+        # Strafe für Knie-Rutschen
         if (left_calf_y > self.ground_threshold or
                 right_calf_y > self.ground_threshold or
                 left_thigh_y > self.ground_threshold or
